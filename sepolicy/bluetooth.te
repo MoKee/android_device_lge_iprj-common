@@ -1,1 +1,1 @@
-allow bluetooth proc_bluetooth_writable:dir { search read };
+allow bluetooth smd_device:chr_file rw_file_perms;

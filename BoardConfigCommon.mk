@@ -111,33 +111,23 @@ BOARD_SEPOLICY_DIRS += \
         device/lge/iprj-common/sepolicy
 
 BOARD_SEPOLICY_UNION += \
-        genfs_contexts \
+        app.te \
+        bluetooth.te \
+        device.te \
+        domain.te \
+        drmserver.te \
+        file.te \
         file_contexts \
-	property_contexts \
-	te_macros \
-	bluetooth.te \
-	camera.te \
-	device.te \
-	dhcp.te \
-	domain.te \
-	drmserver.te \
-	file.te \
-	kickstart.te \
-	init.te \
-	mediaserver.te \
-	mpdecision.te \
-	netmgrd.te \
-	property.te \
-	qmux.te \
-	rild.te \
-	rmt.te \
-	sensors.te \
-	surfaceflinger.te \
-	system.te \
-	tee.te \
-	thermald.te \
-	ueventd.te \
-	wpa_supplicant.te
+        hci_init.te \
+        init_shell.te \
+        keystore.te \
+        mediaserver.te \
+        kickstart.te \
+        rild.te \
+        surfaceflinger.te \
+        system.te \
+        ueventd.te \
+        wpa.te
 
 BOARD_HARDWARE_CLASS := device/lge/iprj-common/cmhw/
 
